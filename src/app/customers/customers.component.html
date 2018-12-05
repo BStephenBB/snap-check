@@ -1,0 +1,22 @@
+<app-banner></app-banner>
+<h1>All Custommers</h1>
+<app-customer-search></app-customer-search>
+
+<div class="customers-container">
+  <a *ngFor="let customer of customers" routerLink="/profile/{{customer.id}}">
+    <div class="customer">
+      <div class="image">
+        <img src="{{customer.profile}}" alt="profile-pic" />
+      </div>
+      <h2 class="name">{{ customer.firstName }} {{ customer.lastName }}</h2>
+      <div class="id">Id: {{ customer.id }}</div>
+      <div class="address">{{ customer.address | address }}</div>
+      <div class="amt">
+        Amount Spent:
+        {{
+          customer.orderTotal.amt / 100 | currency: customer.orderTotal.currency
+        }}
+      </div>
+    </div>
+  </a>
+</div>

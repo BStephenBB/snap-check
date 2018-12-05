@@ -1,0 +1,51 @@
+/* HeroSearch private styles */
+#search-component {
+  margin: 1rem auto;
+  width: 300px;
+}
+
+.search-result li {
+  width: 290px;
+  height: 1.5rem;
+  padding: 8px;
+  background-color: white;
+  cursor: pointer;
+  list-style-type: none;
+  position: relative;
+  left: 3px;
+}
+
+li:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.search-result li:hover {
+  background-color: #e6e6e6;
+}
+
+.search-result li a {
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  text-decoration: none;
+}
+
+#search-box {
+  width: 300px;
+  line-height: 3em;
+  font-family: "Roboto", "Ubuntu", sans-serif;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+  padding-left: 10px;
+  &:focus {
+    border: 2px solid rgba(0, 0, 0, 0.6);
+  }
+}
+
+ul.search-result {
+  margin-top: 0;
+  padding-left: 0;
+  position: absolute;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}

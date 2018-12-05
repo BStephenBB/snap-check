@@ -1,0 +1,88 @@
+.container {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+  width: 35vw;
+  max-width: 500px;
+  min-width: 475px;
+  height: 53vh;
+  position: relative;
+  top: 200px;
+  margin: 0 auto;
+  h2 {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+label {
+  display: inline-block;
+  width: 60%;
+  text-align: right;
+}
+
+input {
+  max-width: 400px;
+  line-height: 2em;
+  font-family: "Roboto", "Ubuntu", sans-serif;
+  margin: 0.5em 1em;
+  border-radius: 5px;
+  border: 1.5px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+  padding-left: 10px;
+  &:focus {
+    border: 1.5px solid rgba(0, 0, 0, 0.6);
+  }
+}
+
+.fields-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-container {
+  margin: 1rem auto 0 auto;
+  padding-bottom: 0.5rem;
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+// modal styling
+.modal-background {
+  display: none;
+  z-index: 10;
+  transition: all 0.2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  width: 300px;
+  height: 170px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  h2 {
+    text-align: center;
+    margin-top: 10%;
+  }
+  div {
+    text-align: center;
+    margin-top: 10%;
+  }
+}
+
+.modal-on {
+  display: block;
+}

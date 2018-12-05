@@ -1,0 +1,36 @@
+.card {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+  width: 40vw;
+  max-width: 500px;
+  min-width: 400px;
+  height: 35vh;
+  margin: 200px auto;
+  h1 {
+    text-align: center;
+    padding-top: 2rem;
+  }
+}
+
+input {
+  max-width: 400px;
+  width: 80%;
+  line-height: 3em;
+  font-family: "Roboto", "Ubuntu", sans-serif;
+  margin: 1em 2em;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+  padding-left: 10px;
+  &:focus {
+    border: 2px solid rgba(0, 0, 0, 0.6);
+  }
+}
+
+.form-group {
+  text-align: center;
+  button {
+    margin-top: 1rem;
+  }
+}

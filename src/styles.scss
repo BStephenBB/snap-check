@@ -1,1 +1,89 @@
-/* You can add global styles to this file, and also import other style files */
+$font: rgba(0, 0, 0, 0.87);
+$primary: hsla(209, 93%, 60%, 1);
+$primary-dark: hsla(209, 93%, 50%, 1);
+$red: hsla(0, 98%, 66%, 1);
+$red-dark: hsla(0, 98%, 60%, 1);
+$green: hsla(120, 66%, 60%, 1);
+$green-dark: hsla(120, 71%, 52%, 1);
+
+body {
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: $primary;
+  margin: 0;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: $font;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.btn {
+  background-color: $primary-dark;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 4px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+  max-width: 410px;
+  &:hover {
+    background-color: $primary;
+  }
+}
+
+.wide {
+  width: 84%;
+}
+
+.sm {
+  padding: 0.5rem 1rem;
+}
+
+.red {
+  background-color: $red-dark;
+  &:hover {
+    background-color: $red;
+  }
+}
+.green {
+  background-color: $green-dark;
+  &:hover {
+    background-color: $green;
+  }
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

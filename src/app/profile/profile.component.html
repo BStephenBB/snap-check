@@ -1,0 +1,52 @@
+<app-banner></app-banner>
+<div *ngIf="customer" class="container">
+  <h2>Edit {{ customer.firstName }} {{ customer.lastName }}</h2>
+  <div class="fields-container">
+    <label
+      >First name: <input [(ngModel)]="customer.firstName" placeholder="name"
+    /></label>
+    <label
+      >Last name: <input [(ngModel)]="customer.lastName" placeholder="name"
+    /></label>
+    <label
+      >Address:
+      <input [(ngModel)]="customer.address.address" placeholder="address"
+    /></label>
+    <label
+      >Apt. #: <input [(ngModel)]="customer.address.aptNum" placeholder="apt #"
+    /></label>
+    <label
+      >City: <input [(ngModel)]="customer.address.city" placeholder="city"
+    /></label>
+    <label
+      >State: <input [(ngModel)]="customer.address.state" placeholder="state"
+    /></label>
+    <label
+      >Zipcode: <input [(ngModel)]="customer.address.zip" placeholder="zipcode"
+    /></label>
+    <label
+      >Amount: <input [(ngModel)]="customer.orderTotal.amt" placeholder="amount"
+    /></label>
+  </div>
+  <div class="btn-container">
+    <button (click)="goBack()" class="btn sm">back</button>
+    <button (click)="toggleModal()" class="btn red sm">delete</button>
+    <button (click)="save()" class="btn green sm">save</button>
+  </div>
+</div>
+
+<div
+  class="modal-background"
+  [class.modal-on]="modalStatus"
+  (click)="toggleModal()"
+>
+  <div class="modal-content">
+    <h2>Are you sure?</h2>
+    <div>
+      <button (click)="goBack()" class="btn sm" style="margin-right: 1rem">
+        cancel
+      </button>
+      <button (click)="delete()" class="btn red sm">yes - delete</button>
+    </div>
+  </div>
+</div>
